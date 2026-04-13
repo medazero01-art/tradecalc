@@ -1,0 +1,74 @@
+[
+  {
+    "id": "concrete-slab",
+    "category": "concrete",
+    "slug": "slab-calculator",
+    "name": "Concrete Slab Calculator",
+    "description": "Calculate the exact amount of concrete needed for your slab project. Get results in cubic yards and 80lb/36Kg bags.",
+    "seoTitle": "Concrete Slab Calculator | Fast & Accurate | TradeCalc",
+    "seoDescription": "Calculate how many bags or yards of concrete you need for a slab. Free, fast, and mobile-friendly concrete calculator for pros and DIYers."
+  },
+  {
+    "id": "concrete-footing",
+    "category": "concrete",
+    "slug": "footing-calculator",
+    "name": "Concrete Footing Calculator",
+    "description": "Determine the concrete volume required for continuous footings.",
+    "seoTitle": "Concrete Footing Calculator | TradeCalc",
+    "seoDescription": "Calculate the exact amount of concrete needed for footings. Get results in cubic yards and bags instantly."
+  },
+  {
+    "id": "roof-pitch",
+    "category": "roofing",
+    "slug": "pitch-calculator",
+    "name": "Roof Pitch Calculator",
+    "description": "Calculate roof pitch, angle, and multiplier for your roofing projects.",
+    "seoTitle": "Roof Pitch & Multiplier Calculator | TradeCalc",
+    "seoDescription": "Instantly calculate roof pitch, angle, and rafter length multipliers. Essential tool for roofers and framers."
+  },
+  {
+    "id": "tile-coverage",
+    "category": "tile",
+    "slug": "coverage-calculator",
+    "name": "Tile Coverage Calculator",
+    "description": "Calculate how many tiles you need for your floor or wall project.",
+    "seoTitle": "Tile Coverage Calculator | TradeCalc",
+    "seoDescription": "Find out exactly how many tiles you need for your project, including waste calculations."
+  },
+  {
+    "id": "drywall-sheet",
+    "category": "drywall",
+    "slug": "sheet-calculator",
+    "name": "Drywall Sheet Calculator",
+    "description": "Estimate the number of drywall sheets needed for a room.",
+    "seoTitle": "Drywall Sheet Calculator | TradeCalc",
+    "seoDescription": "Calculate how many 4x8 or 4x12 drywall sheets you need for your walls and ceilings."
+  },
+  {
+    "id": "paint-coverage",
+    "category": "paint",
+    "slug": "coverage-calculator",
+    "name": "Paint Coverage Calculator",
+    "description": "Calculate how many gallons of paint you need for your walls.",
+    "seoTitle": "Paint Coverage Calculator | TradeCalc",
+    "seoDescription": "Estimate the exact amount of paint needed for your interior or exterior painting project."
+  },
+  {
+    "id": "deck-board",
+    "category": "framing",
+    "slug": "deck-board-calculator",
+    "name": "Deck Board Calculator",
+    "description": "Calculate the number of deck boards needed for your deck.",
+    "seoTitle": "Deck Board Calculator | TradeCalc",
+    "seoDescription": "Find out how many decking boards you need for your project based on square footage and board width."
+  },
+  {
+    "id": "laminate-flooring",
+    "category": "flooring",
+    "slug": "laminate-calculator",
+    "name": "Laminate Flooring Calculator",
+    "description": "Calculate the boxes of laminate flooring needed for your room.",
+    "seoTitle": "Laminate Flooring Calculator | TradeCalc",
+    "seoDescription": "Determine exactly how many boxes of laminate or vinyl plank flooring you need, including waste."
+  }
+]
