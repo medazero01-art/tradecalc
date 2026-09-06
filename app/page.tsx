@@ -1,8 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
+import { Metadata } from 'next';
 import { ChevronRight } from 'lucide-react';
 import calculators from '@/config/calculators.json';
 import { AdSlot } from '@/components/ui/AdSlot';
+import { SITE_URL } from '@/lib/site';
+
+export const metadata: Metadata = {
+  title: 'TradeCalc | Free Construction & Trade Calculators',
+  description: 'Fast, accurate, mobile-friendly calculators for concrete, roofing, framing, drywall, paint, tile, and laminate flooring. Get the number and get back to work.',
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    title: 'TradeCalc | Free Construction & Trade Calculators',
+    description: 'Fast, accurate, mobile-friendly calculators for concrete, roofing, framing, drywall, paint, tile, and laminate flooring.',
+    url: SITE_URL,
+  },
+};
 
 interface HomePageProps {
   searchParams: Promise<{ q?: string }>;

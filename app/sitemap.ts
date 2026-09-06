@@ -1,30 +1,31 @@
 import { MetadataRoute } from 'next';
 import calculators from '@/config/calculators.json';
+import { SITE_URL } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://tradecalc.com';
+  const now = new Date();
 
-  const staticPages = [
+  const staticPages: MetadataRoute.Sitemap = [
     {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: 1,
+      url: SITE_URL,
+      lastModified: now,
+      changeFrequency: 'daily',
+      priority: 1.0,
     },
   ];
 
   const categories = Array.from(new Set(calculators.map((c) => c.category)));
-  const categoryPages = categories.map((category) => ({
-    url: `${baseUrl}/calculators/${category}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
+  const categoryPages: MetadataRoute.Sitemap = categories.map((category) => ({
+    url: `${SITE_URL}/calculators/${category}`,
+    lastModified: now,
+    changeFrequency: 'weekly',
     priority: 0.8,
   }));
 
-  const calculatorPages = calculators.map((calc) => ({
-    url: `${baseUrl}/calculators/${calc.category}/${calc.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
+  const calculatorPages: MetadataRoute.Sitemap = calculators.map((calc) => ({
+    url: `${SITE_URL}/calculators/${calc.category}/${calc.slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly',
     priority: 0.9,
   }));
 

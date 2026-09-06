@@ -1,13 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useUnit } from '@/context/UnitContext';
 import { CalculatorContainer } from '@/components/ui/CalculatorContainer';
 import { InputField } from '@/components/ui/InputField';
 import { UnitToggle } from '@/components/ui/UnitToggle';
 import { ResultDisplay } from '@/components/ui/ResultDisplay';
 
 export function RoofPitch() {
-  const [unit, setUnit] = useState('imperial'); // 'imperial' or 'metric'
+  const { unit, setUnit } = useUnit();
   const [rise, setRise] = useState<string>('4');
   const [run, setRun] = useState<string>('12');
   

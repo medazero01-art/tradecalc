@@ -1,13 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useUnit } from '@/context/UnitContext';
 import { CalculatorContainer } from '@/components/ui/CalculatorContainer';
 import { InputField } from '@/components/ui/InputField';
 import { UnitToggle } from '@/components/ui/UnitToggle';
 import { ResultDisplay } from '@/components/ui/ResultDisplay';
 
 export function DeckBoard() {
-  const [unit, setUnit] = useState('imperial'); // 'imperial' or 'metric'
+  const { unit, setUnit } = useUnit();
   const [length, setLength] = useState<string>('12');
   const [width, setWidth] = useState<string>('12');
   const [boardWidth, setBoardWidth] = useState<string>('5.5'); // standard 6" board is 5.5"
